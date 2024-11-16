@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>屏幕氛围灯</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="light-screen" id="lightScreen">
+        <div class="controls">
+            <div class="control-panel">
+                <div class="color-presets">
+                    <button class="color-btn" data-color="#FF1493" style="background-color: #FF1493;" title="霓虹粉">霓虹粉</button>
+                    <button class="color-btn" data-color="#4B0082" style="background-color: #4B0082;" title="深邃紫">深邃紫</button>
+                    <button class="color-btn" data-color="#00BFFF" style="background-color: #00BFFF;" title="天际蓝">天际蓝</button>
+                    <button class="color-btn" data-color="#FF4500" style="background-color: #FF4500;" title="落日橙">落日橙</button>
+                </div>
+
+                <div class="color-presets">
+                    <button class="color-btn" data-color="#9400D3" style="background-color: #9400D3;" title="梦幻紫">梦幻紫</button>
+                    <button class="color-btn" data-color="#32CD32" style="background-color: #32CD32;" title="青柠绿">青柠绿</button>
+                    <button class="color-btn" data-color="#FF69B4" style="background-color: #FF69B4;" title="少女粉">少女粉</button>
+                    <button class="color-btn" data-color="#4169E1" style="background-color: #4169E1;" title="皇家蓝">皇家蓝</button>
+                </div>
+
+                <div class="brightness-control">
+                    <label for="brightness">亮度调节</label>
+                    <input type="range" id="brightness" min="0" max="100" value="50">
+                    <span id="brightnessValue">50%</span>
+                </div>
+
+                <div class="brightness-control">
+                    <label for="saturation">饱和度调节</label>
+                    <input type="range" id="saturation" min="0" max="200" value="100">
+                    <span id="saturationValue">100%</span>
+                </div>
+
+                <button id="fullscreenBtn" class="fullscreen-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20">
+                        <path d="M1 1h6v2H3v4H1V1zm18 0h-6v2h4v4h2V1zM3 17h4v2H1v-6h2v4zm14 0v-4h2v6h-6v-2h4z" fill="currentColor"/>
+                    </svg>
+                    全屏模式
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
